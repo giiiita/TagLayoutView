@@ -63,7 +63,7 @@ public struct TagLayoutView<Content>: View where Content: View {
     
     public var body : some View {
         GeometryReader { geometry in
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 ForEach(0 ..< self.elementsCountByRow.count, id: \.self) { rowIndex in
                     HStack {
                         ForEach(0 ..< self.elementsCountByRow[rowIndex], id: \.self) { elementIndex in
