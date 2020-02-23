@@ -1,6 +1,10 @@
 # TagLayoutView
 TagLayoutViewTagLayoutView is a library made with SwiftUI for easy tag display.
-
+<p align="center">
+    <img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platforms" />
+    <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
+    <a href="https://github.com/yotsu12/TagLayoutView/blob/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+</p>
 <center>
 <img src="TagLayoutView.gif"/>
 </center>
