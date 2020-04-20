@@ -9,16 +9,19 @@ import SwiftUI
 public struct TagLayoutView<Content>: View where Content: View {
     
     private let tags: [String]
+    private var tagFont: UIFont
     private let padding: CGFloat
     private let parentWidth: CGFloat
     private let content: (String) -> Content
     private var elementsCountByRow: [Int] = []
     
     public init(_ tags: [String],
+                tagFont: UIFont,
                 padding: CGFloat,
                 parentWidth: CGFloat,
                 content: @escaping (String) -> Content) {
         self.tags = tags
+        self.tagFont = tagFont
         self.padding = padding
         self.parentWidth = parentWidth
         self.content = content
@@ -26,7 +29,7 @@ public struct TagLayoutView<Content>: View where Content: View {
     }
     
     private func getElementsCountByRow(_ rowSize: CGFloat) -> [Int] {
-        let tagWidths = self.tags.map{$0.widthOfString(usingFont: UIFont.preferredFont(forTextStyle: .headline))}
+        let tagWidths = self.tags.map{$0.widthOfString(usingFont: self.tagFont)}
 
         var currentRowTotalWidth: CGFloat = 0.0
         var currentRowElementsCount: Int = 0
