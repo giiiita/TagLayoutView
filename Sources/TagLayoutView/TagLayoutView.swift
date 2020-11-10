@@ -65,17 +65,14 @@ public struct TagLayoutView<Content>: View where Content: View {
     }
     
     public var body : some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(0 ..< self.elementsCountByRow.count, id: \.self) { rowIndex in
-                    HStack {
-                        ForEach(0 ..< self.elementsCountByRow[rowIndex], id: \.self) { elementIndex in
-                            self.content(self.getTag(elementsCountByRow: self.elementsCountByRow, rowIndex: rowIndex, elementIndex: elementIndex))
-                        }
-                        Spacer()
-                    }.padding(.vertical, 4)
-                }
-                Spacer()
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(0 ..< self.elementsCountByRow.count, id: \.self) { rowIndex in
+                HStack {
+                    ForEach(0 ..< self.elementsCountByRow[rowIndex], id: \.self) { elementIndex in
+                        self.content(self.getTag(elementsCountByRow: self.elementsCountByRow, rowIndex: rowIndex, elementIndex: elementIndex))
+                    }
+                    Spacer()
+                }.padding(.vertical, 4)
             }
         }
     }
