@@ -6,6 +6,7 @@
 
 import SwiftUI
 
+@available(iOS 13.0, *)
 public struct TagLayoutView<Content>: View where Content: View {
     
     private let tags: [String]
