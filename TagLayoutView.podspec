@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name             = 'TagLayoutView'
-  s.version          = 'v_1.0.0'
+  s.version          = '0.0.1'
   s.summary          = 'SwiftUI library for easy tag display.'
   s.description      = <<-DESC
 TagLayoutView enables you to display tags easily.
                        DESC
-  s.homepage         = 'https://github.com/giiiita/TagLayoutView'
+  s.homepage         = 'https://github.com/AlexanderMarchant/TagLayoutView'
   
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'CSolanaM' => 'carlos.solana.martinez@gmail.com' }
-  s.source           = { :git => 'https://github.com/giiiita/TagLayoutView', :tag => s.version.to_s }
+  s.author           = { 'AlexanderMarchant' => 'alex_marchant@outlook.com' }
+  s.source           = { :git => 'https://github.com/AlexanderMarchant/TagLayoutView', :tag => s.version.to_s }
   
   s.ios.deployment_target = '12.0'
   
