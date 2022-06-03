@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TagLayoutView'
-  s.version          = '0.0.1'
+  s.version          = 'v_1.0.0'
   s.summary          = 'SwiftUI library for easy tag display.'
   s.description      = <<-DESC
 TagLayoutView enables you to display tags easily.
