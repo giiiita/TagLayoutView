@@ -16,6 +16,7 @@ struct TagListView: View {
         GeometryReader { geometry in
             TagLayoutView(
             ["tagA", "tagB", "tagC"],
+            tagFont: UIFont.systemFont(ofSize: 34, weight: UIFont.Weight.thin)
             padding: 20,
             parentWidth: geometry.size.width) { tag in
                 Text(tag)
